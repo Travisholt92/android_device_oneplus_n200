@@ -48,4 +48,4 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 $(call inherit-product, device/oneplus/sm8350-common/common.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/oneplus/lemonade/lemonade-vendor.mk)
+$(call inherit-product, vendor/oneplus/n200/n200-vendor.mk)

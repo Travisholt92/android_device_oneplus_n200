@@ -18,14 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from lemonade device
-$(call inherit-product, device/oneplus/lemonade/device.mk)
+# Inherit from n200 device
+$(call inherit-product, device/oneplus/n200/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonade
-PRODUCT_DEVICE := lemonade
+PRODUCT_NAME := lineage_n200
+PRODUCT_DEVICE := n200
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2113
