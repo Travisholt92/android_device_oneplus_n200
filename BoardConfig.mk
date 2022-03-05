@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# Inherit from oneplus sm8350-common
--include device/oneplus/sm8350-common/BoardConfigCommon.mk
+# Inherit from oneplus sm4350-common
+-include device/oneplus/sm4350-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/n200
 
@@ -24,14 +24,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Display
 TARGET_SCREEN_DENSITY := 450
-
-# Fingerprint
-SOONG_CONFIG_ONEPLUS_FOD_POS_X = 453
-SOONG_CONFIG_ONEPLUS_FOD_POS_Y = 2120
-SOONG_CONFIG_ONEPLUS_FOD_SIZE = 174
-
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
 -include vendor/oneplus/n200/BoardConfigVendor.mk
